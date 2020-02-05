@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="user_img_mrg_start">10dp</dimen>
+    <dimen name="user_img_item_width">100dp</dimen>
+    <dimen name="user_img_item_height">100dp</dimen>
+    <dimen name="user_img_mrg_top">8dp</dimen>
+    <dimen name="user_img_mrg_bottom">8dp</dimen>
+    <dimen name="user_img_mrg_end">12dp</dimen>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgUserImage"
+        android:layout_width="@dimen/user_img_item_width"
+        android:layout_height="@dimen/user_img_item_height"
+        android:layout_marginStart="@dimen/user_img_mrg_start"
+        android:layout_marginTop="@dimen/user_img_mrg_top"
+        android:layout_marginBottom="@dimen/user_img_mrg_bottom"
+        android:paddingEnd="@dimen/user_img_mrg_end"
+
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        app:layout_constraintStart_toEndOf="@id/imgUserImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvEmailAddress"/>
+
+    <TextView
+        android:id="@+id/tvEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/tvUserFullName"
+        app:layout_constraintStart_toEndOf="@id/imgUserImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
